@@ -13,7 +13,7 @@ body {
 }
 
 .hero-buttons button {
-  min-width: 200px; /* o el ancho que cubra el texto más largo */
+  min-width: 200px; 
   padding: 15px 30px;
   font-size: 18px;
   font-weight: bold;
@@ -109,23 +109,23 @@ body {
   margin: 0;
   padding: 0 20px;
   opacity: 0;
-  overflow: visible;         /* Permite crecer sin recortar */
-  transition: opacity 0.4s ease; /* Solo animamos la opacidad */
-  max-height: none;          /* Quitamos límite de altura */
+  overflow: visible;         
+  transition: opacity 0.4s ease; 
+  max-height: none;          
 }
 
 .dropdown[open] ul {
   padding-bottom: 10px;
   opacity: 1;
-  overflow: visible;         /* Mismo comportamiento al abrir */
-  max-height: none;          /* Sin límite */
+  overflow: visible;         
+  max-height: none;          
 }
 
 .dropdown ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 0;      /* Aumentado padding vertical de 8px a 16px */
+  padding: 14px 0;      
   border-bottom: 1px solid #eee;
 }
 
@@ -147,7 +147,7 @@ body {
 }
 @media (max-width: 600px) {
   .dropdown ul li {
-    padding: 14px 15px;  /* Aumentado padding vertical y horizontal */
+    padding: 14px 15px;  
   }
   .dropdown ul li span.precio {
     margin-left: 15px;
