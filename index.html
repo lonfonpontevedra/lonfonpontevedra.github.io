@@ -1,14 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lon Fon - Pontevedra</title>
-</head>
-<body>
-    <main>
-        <p>First commit</p>
-    </main>
-</body>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css">
+        <title>Lon Fon - Pontevedra</title>
+    </head>
+    <body>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Lon Fon</h1>
+                    <p>Abiertos desde 1986.<br>Primer restaurante chino de Pontevedra.</p>
+                </div>
+                <div class="hero-buttons">
+                    <button id="btnVerMenu">Ver carta</button>
+                    <button id="btnVerInfo">Información</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menú principal -->
+        <section id="menu" class="menu">
+            <h1>Carta</h1>
+
+            <details class="dropdown" open>
+                <summary>Entremeses</summary>
+                <ul>
+                    <li><span>1. Ensalada especial china</span><span class="precio">4.25€</span></li>
+                    <li><span>2. Ensalada de gambas</span><span class="precio">4.65€</span></li>
+                    <li><span>4. Rollo de primavera</span><span class="precio">1.80€</span></li>
+                    <li><span>4A. Rollitos de Vietnam</span><span class="precio">4.95€</span></li>
+                    <li><span>5. Wan-Tun frito</span><span class="precio">4.25€</span></li>
+                    <li><span>5A. Pan de gambas frito</span><span class="precio">3.85€</span></li>
+                    <li><span>5B. Rollitos de langostinos</span><span class="precio">4.95€</span></li>
+                </ul>
+            </details>
+
+            <details class="dropdown" open>
+                <summary>Sopas</summary>
+                <ul>
+                    <li><span>6. Sopa de nidos de golondrina</span><span class="precio">4.00€</span></li>
+                    <li><span>7. Sopa de aletas de tiburón</span><span class="precio">4.15€</span></li>
+                    <li><span>8. Sopa agripicante</span><span class="precio">4.15€</span></li>
+                    <li><span>9. Sopa de fideos chinos con Tsa-Chai</span><span class="precio">4.00€</span></li>
+                    <li><span>10. Sopa de Wan-Tun</span><span class="precio">4.15€</span></li>
+                    <li><span>11. Sopa de pollo con champiñon</span><span class="precio">4.15€</span></li>
+                    <li><span>13. Sopa de maíz</span><span class="precio">4.00€</span></li>
+                </ul>
+            </details>
+
+            <details class="dropdown" open>
+                <summary>Arroces, tallarines, huevos y verduras</summary>
+                <ul>
+                    <li><span>14. Arroz blanco</span><span class="precio">2.00€</span></li>
+                    <li><span>15. Arroz frito tres delicias</span><span class="precio">4.45€</span></li>
+                    <li><span>16. Arroz frito con gambas</span><span class="precio">4.95€</span></li>
+                    <li><span>16A. Arroz frito de la casa</span><span class="precio">5.75€</span></li>
+                    <li><span>17. Tallarines fritos tres delicias</span><span class="precio">4.95€</span></li>
+                    <li><span>18. Tallarines fritos con carne de cerdo</span><span class="precio">4.85€</span></li>
+                    <li><span>19. Tallarines con ternera</span><span class="precio">4.95€</span></li>
+                    <li><span>20. Tallarines con gambas</span><span class="precio">5.15€</span></li>
+                    <li><span>20A. Tallarines chinos sobre bandeja quemada</span><span class="precio">6.75€</span></li>
+                    <li><span>21. Huevos revueltos con gambas</span><span class="precio">5.55€</span></li>
+                    <li><span>22. Huevos revueltos con jamón</span><span class="precio">5.25€</span></li>
+                    <li><span>23. Verduras variadas salteadas</span><span class="precio">5.65€</span></li>
+                </ul>
+            </details>
+            <details class="dropdown" open>
+                <summary>Mariscos</summary>
+                <ul>
+                    <li><span>26. Gambas fritas</span><span class="precio">8.15€</span></li>
+                    <li><span>27. Gambas agridulces</span><span class="precio">8.15€</span></li>
+                    <li><span>28. Gambas con bambú</span><span class="precio">8.45€</span></li>
+                    <li><span>29. Verduras con gambas</span><span class="precio">8.15€</span></li>
+                    <li><span>31. Mariscos variados salteados</span><span class="precio">8.45€</span></li>
+                    <li><span>32. Gambas con salsa picante</span><span class="precio">8.15€</span></li>
+                </ul>
+            </details>
+
+            <details class="dropdown" open>
+                <summary>Ternera</summary>
+                <ul>
+                    <li><span>35. Ternera con salsa de curry</span><span class="precio">8.15€</span></li>
+                    <li><span>36. Ternera con salsa de ostras</span><span class="precio">8.15€</span></li>
+                    <li><span>37. Ternera con pimientos verdes</span><span class="precio">8.45€</span></li>
+                    <li><span>38. Ternera con cebolla</span><span class="precio">8.15€</span></li>
+                    <li><span>39. Ternera con salsa de tomate</span><span class="precio">8.45€</span></li>
+                    <li><span>40. Ternera con salsa picante</span><span class="precio">8.15€</span></li>
+                    <li><span>41. Ternera con verduras</span><span class="precio">8.15€</span></li>
+                    <li><span>42. Ternera con champiñones</span><span class="precio">8.15€</span></li>
+                </ul>
+            </details>
+
+            <details class="dropdown" open>
+                <summary>Cerdo</summary>
+                <ul>
+                    <li><span>44. Cerdo agridulce</span><span class="precio">6.45€</span></li>
+                    <li><span>45. Cerdo con salsa picante</span><span class="precio">6.45€</span></li>
+                    <li><span>46. Cerdo con puerros y champiñón</span><span class="precio">6.45€</span></li>
+                    <li><span>47. Costilla agridulce</span><span class="precio">6.95€</span></li>
+                    <li><span>48. Costilla asada</span><span class="precio">6.95€</span></li>
+                    <li><span>50. Cerdo con verduras</span><span class="precio">6.45€</span></li>
+                </ul>
+            </details>
+
+            <details class="dropdown" open>
+                <summary>Pollo</summary>
+                <ul>
+                    <li><span>51. Pollo con salsa curry</span><span class="precio">6.65€</span></li>
+                    <li><span>52. Pollo con salsa picante</span><span class="precio">6.65€</span></li>
+                    <li><span>53. Pollo con almendras</span><span class="precio">6.65€</span></li>
+                    <li><span>54. Pollo con verduras</span><span class="precio">6.65€</span></li>
+                    <li><span>56. Pollo frito estilo chino</span><span class="precio">6.65€</span></li>
+                    <li><span>57. Pollo con piña</span><span class="precio">6.65€</span></li>
+                </ul>
+            </details>
+
+            <details class="dropdown" open>
+                <summary>Platos especiales</summary>
+                <ul>
+                    <li><span>58. Bambú y setas chinas salteadas</span><span class="precio">6.95€</span></li>
+                    <li><span>59. Pollo con bambú y setas chinas</span><span class="precio">6.95€</span></li>
+                    <li><span>60. Cerdo con Tsa-Chai</span><span class="precio">6.45€</span></li>
+                    <li><span>61. Pato con piña</span><span class="precio">8.45€</span></li>
+                    <li><span>62. Pato con bambú y setas chinas</span><span class="precio">8.65€</span></li>
+                    <li><span>63. Pato asado</span><span class="precio">8.85€</span></li>
+                    <li><span>64. Familia feliz</span><span class="precio">7.95€</span></li>
+                    <li><span>65. Ternera con bambú y setas chinas</span><span class="precio">7.25€</span></li>
+                    <li><span>66. Cerdo con bambú y setas chinas</span><span class="precio">6.95€</span></li>
+                    <li><span>67. Cerdo con fideos chinos</span><span class="precio">6.65€</span></li>
+                    <li><span>68. Ku-Bak tres delicias</span><span class="precio">7.65€</span></li>
+                    <li><span>69. Langostinos con salsa de soja</span><span class="precio">9.95€</span></li>
+                    <li><span>70. Ternera sobre bandeja quemada</span><span class="precio">8.25€</span></li>
+                    <li><span>71. Langostinos sobre bandeja quemada</span><span class="precio">10.95€</span></li>
+                    <li><span>72. Pato sobre bandeja quemada</span><span class="precio">10.45€</span></li>
+                    <li><span>73. Pollo con salsa de limón</span><span class="precio">6.95€</span></li>
+                    <li><span>74A. Pollo con chanpiñones</span><span class="precio">6.65€</span></li>
+                    <li><span>76. Pan chino</span><span class="precio">1.80€</span></li>
+                    <li><span>78. Fideos de arroz tres delicias</span><span class="precio">6.95€</span></li>
+                    <li><span>79. Cerdo destrozado Yuxiang</span><span class="precio">8.25€</span></li>
+                    <li><span>80. Ternera frita de tailandia</span><span class="precio">8.25€</span></li>
+                    <li><span>81. Pato Peking</span><span class="precio">15.00€</span></li>
+                </ul>
+            </details>
+
+        </section>
+
+        <section id="info" class="info">
+            <h1>Información</h1>
+
+            <h2>Visítanos</h2>
+            <address>
+                Rúa Blanco Porto, 4 (Bajo)<br>
+                36001 Pontevedra<br>
+                España
+            </address>
+
+            <h2>Horario</h2>
+            <p>De martes a domingo.<br>
+                12:00-16:00<br>
+                20:00-00:00</p>
+            <p><strong>LUNES CERRADO</strong></p>
+
+            <h2>Contacto</h2>
+            <p>986 84 64 12</p>
+        </section>
+
+        <!-- Script de scroll -->
+        <script>
+        const btnMenu = document.getElementById('btnVerMenu');
+        btnMenu.addEventListener('click', () => {
+        document.getElementById('menu').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        const btnInfo = document.getElementById('btnVerInfo');
+        btnInfo.addEventListener('click', () => {
+        document.getElementById('info').scrollIntoView({ behavior: 'smooth' });
+        });
+        </script>
+    </body>
 </html>
 

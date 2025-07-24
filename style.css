@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-family: Alegreya, Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.hero-buttons button {
+  min-width: 200px; /* o el ancho que cubra el texto más largo */
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+.hero {
+  position: relative; 
+  height: 100vh;
+  background-image: url('bg.jpg'); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white; 
+  overflow: hidden;
+}
+
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); 
+  z-index: 1;
+}
+
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content button {
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-content button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.menu {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.menu h1 {
+  text-align: center;
+  color: #333;
+}
+
+
+.dropdown {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.dropdown summary {
+  padding: 12px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #eee;
+  user-select: none;
+  list-style: none;
+}
+
+.dropdown summary:hover {
+  background-color: #ddd;
+}
+
+.dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 20px;
+  opacity: 0;
+  overflow: visible;         /* Permite crecer sin recortar */
+  transition: opacity 0.4s ease; /* Solo animamos la opacidad */
+  max-height: none;          /* Quitamos límite de altura */
+}
+
+.dropdown[open] ul {
+  padding-bottom: 10px;
+  opacity: 1;
+  overflow: visible;         /* Mismo comportamiento al abrir */
+  max-height: none;          /* Sin límite */
+}
+
+.dropdown ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;      /* Aumentado padding vertical de 8px a 16px */
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown ul li:last-child {
+  border-bottom: none;
+}
+
+.info {
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+  color: #333;
+}
+
+.precio {
+  color: #666;
+  font-weight: normal;
+}
+@media (max-width: 600px) {
+  .dropdown ul li {
+    padding: 14px 15px;  /* Aumentado padding vertical y horizontal */
+  }
+  .dropdown ul li span.precio {
+    margin-left: 15px;
+    white-space: nowrap;
+  }
+}
+
