@@ -151,7 +151,7 @@
   <section id="info" class="info">
     <h1>Información</h1>
 
-    <h2>Visítanos</h2>
+    <button class="visit" onclick="openLonFon()">Visítanos</button>
     <address>
       Rúa Blanco Porto, 4 (Bajo)<br>
       36001 Pontevedra<br>
@@ -178,7 +178,18 @@
     btnInfo.addEventListener('click', () => {
       document.getElementById('info').scrollIntoView({behavior: 'smooth'});
     });
-  </script>
+
+    const openLonFon = () => {
+      const googleUrl = "https://maps.app.goo.gl/opjxYwn33R7VKpHGA";
+      const appleUrl = "https://maps.apple.com/?q=Business&ll=40.712776,-74.005974";
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        window.location.href = businessAppleMapsUrl;
+      } else {
+        window.location.href = googleUrl;
+      }
+    }</script>
 </body>
 
 </html>

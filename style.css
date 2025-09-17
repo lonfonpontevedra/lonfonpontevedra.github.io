@@ -13,7 +13,7 @@ body {
 }
 
 .hero-buttons button {
-  min-width: 200px; 
+  min-width: 200px;
   padding: 15px 30px;
   font-size: 18px;
   font-weight: bold;
@@ -25,17 +25,18 @@ body {
   transition: background-color 0.3s ease;
   text-align: center;
 }
+
 .hero {
-  position: relative; 
+  position: relative;
   height: 100vh;
-  background-image: url('bg.jpg'); 
+  background-image: url('bg.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white; 
+  color: white;
   overflow: hidden;
 }
 
@@ -43,8 +44,11 @@ body {
 .hero::before {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4); 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 
@@ -109,23 +113,23 @@ body {
   margin: 0;
   padding: 0 20px;
   opacity: 0;
-  overflow: visible;         
-  transition: opacity 0.4s ease; 
-  max-height: none;          
+  overflow: visible;
+  transition: opacity 0.4s ease;
+  max-height: none;
 }
 
 .dropdown[open] ul {
   padding-bottom: 10px;
   opacity: 1;
-  overflow: visible;         
-  max-height: none;          
+  overflow: visible;
+  max-height: none;
 }
 
 .dropdown ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 0;      
+  padding: 14px 0;
   border-bottom: 1px solid #eee;
 }
 
@@ -145,13 +149,29 @@ body {
   color: #666;
   font-weight: normal;
 }
+
 @media (max-width: 600px) {
   .dropdown ul li {
-    padding: 14px 15px;  
+    padding: 14px 15px;
   }
+
   .dropdown ul li span.precio {
     margin-left: 15px;
     white-space: nowrap;
   }
 }
 
+.visit {
+  min-width: 200px;
+  padding: 15px 30px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(1, 0, 0, 1);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
